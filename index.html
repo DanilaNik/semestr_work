@@ -2,16 +2,40 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>computeruniverse</title>
   <!--Стартовые стили шаблона-->
   <link rel="stylesheet" href="css/starter.css">
   <!--Ваши стили-->
   <link rel="stylesheet" href="css/style.css">
+  <style>
+	#sample{
+    font-size: 200px;
+    color: #C0C0C0;
+	}
+	.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+    }
+
+    @-webkit-keyframes fade{
+	from{opacity: 0.4}
+	to{opacity: 1}
+    }
+
+    @keyframes fade{
+	from{opacity: 0.4}
+	to{opacity: 1}
+    }
+  </style>
 </head>
 
 <body>
 	<div id ="page-preloader" class="preloader">
-		<div class="loader"><img src="img/preloader.png" id="sample"></div>
+		<div class="loader"><i class="fas fa-cog" id="sample" style= "font-size: 200px", color: #C0C0C0;
+		}
+			color: #C0C0C0;"></i></div>
 	</div>
 	<!--НАЧАЛО Шапка-->
   <header class="mainheader">
@@ -37,7 +61,7 @@
 	</div>
 
   <main>
-	<div class="scroll-up"><img src="img/scrollUp.png" styke="width:40px", height="40px"></div>
+	<div class="scroll-up"><i class="fas fa-arrow-circle-up" style="font-size: 38px; color: #000"></i></div>
 
     <div class="container">
       <!--НАЧАЛО Секция "Серии наборов"-->
@@ -47,31 +71,31 @@
         <!--НАЧАЛО Обертка для слайдов-->
         <div class="kit_slides_wrapper">
           <!-- НАЧАЛО Слайд №1-->
-        	<div class="item">
+        	<div class="item fade">
         	  <img src="img/slide/nvidia.jpeg" style="width:100%", height="100%" alt="">
         	</div>
 		  <!-- КОНЕЦ Слайд №1-->
 
 		  <!-- НАЧАЛО Слайд №2-->
-		  <div class="item">
+		  <div class="item fade">
 			<img src="img/slide/monitor.png" style="width:100%", height="100%" alt="">
 		  </div>
 		  <!-- КОНЕЦ Слайд №2-->
 
 		  <!-- НАЧАЛО Слайд №3-->
-		  <div class="item">
+		  <div class="item fade">
 			<img src="img/slide/samsung.png" style="width:100%", height="100%" alt="">
 		  </div>
 		  <!-- КОНЕЦ Слайд №3-->
 
 		  <!-- НАЧАЛО Слайд №4-->
-		  <div class="item">
+		  <div class="item fade">
 			<img src="img/slide/asus.png" style="width:100%", height="100%" alt="">
 		  </div>
 		  <!-- КОНЕЦ Слайд №4-->
 
 		  <!-- НАЧАЛО Слайд №5-->
-		  <div class="item">
+		  <div class="item fade">
 			<img src="img/slide/fitness.png" style="width:100%", height="100%" alt="">
 		  </div>
 		  <!-- КОНЕЦ Слайд №5-->
@@ -208,6 +232,7 @@
       
     </div>
   </main>
+<script src="https://kit.fontawesome.com/2db1943f67.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
